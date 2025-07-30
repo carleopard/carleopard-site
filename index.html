@@ -4,37 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CarLeopard Search</title>
+  <title>CarLeopard Hero Section</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="car-search-section">
-    <div class="search-wrapper">
-      <div class="davy-video">
-        <video autoplay muted loop playsinline>
-          <source src="assets/davy-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="search-right">
-        <h2>Let Davy guide your car hunt.</h2>
-        <form class="filters">
-          <input type="text" placeholder="Make" />
-          <input type="text" placeholder="Model" />
-          <input type="text" placeholder="ZIP Code" />
-          <select>
-            <option>Price Range</option>
-          </select>
-          <button type="submit">Search</button>
-        </form>
-      </div>
-    </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Car, Your Terms</h1>
+      <p>Shop new and used cars, value your trade-in, and book appointments.</p>
 
-    <div class="smart-boxes">
-      <div class="box">📊 <strong>Smart Buyer™ Report</strong><br />VIN-based insights</div>
-      <div class="box">🛑 <strong>No-Sell Mode™</strong><br />Control dealer contact</div>
-      <div class="box">🔍 <strong>Verified Lot Check</strong><br />Real-time car confirmation</div>
-      <div class="box">💵 <strong>TradeMax™</strong><br />Compare trade-in offers</div>
+      <div class="search-bar">
+        <select><option>New & Used</option></select>
+        <select><option>All Makes</option></select>
+        <select><option>All Models</option></select>
+        <select><option>0-50 miles</option></select>
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature">✅ Smart Buyer™ Report</div>
+        <div class="feature">🚗 Recall-Guard</div>
+        <div class="feature">🏷️ Trade-Max</div>
+        <div class="feature">📍 Local Deals</div>
+      </div>
+
+      <button class="cta-btn">Check My Vehicle for Recalls</button>
     </div>
   </section>
 </body>
