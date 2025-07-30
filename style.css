@@ -47,23 +47,36 @@ body {
   border: none;
   cursor: pointer;
 }
-.feature-boxes {
+..features-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* dark transparent bg */
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 90%;
   flex-wrap: wrap;
-  padding: 60px 40px;
-  background: #F4E1C1; /* Safari Tan */
-  text-align: center;
 }
 
 .feature {
-  width: 200px;
-  margin: 20px;
-  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: white;
+  max-width: 200px;
 }
 
 .feature .icon {
   font-size: 36px;
-  display: block;
   margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 14px;
+  opacity: 0.8;
 }
