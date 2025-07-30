@@ -47,3 +47,23 @@ body {
   border: none;
   cursor: pointer;
 }
+.feature-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  background: #F4E1C1; /* Safari Tan */
+  text-align: center;
+}
+
+.feature {
+  width: 200px;
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.feature .icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
