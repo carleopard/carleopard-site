@@ -1,3 +1,3 @@
 
-console.log("CarLeopard interactive features loading...");
-// Add interactivity scripts here
+// Placeholder for future interactivity
+console.log("CarLeopard script loaded.");

@@ -1,102 +1,35 @@
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #031225;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 .hero {
-    padding: 60px 20px;
-    background: url('https://i.ibb.co/wBhLjG6/night-skyline-bg.png') no-repeat center;
-    background-size: cover;
-    position: relative;
-    text-align: center;
+  background-image: url('./assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-.search-box, .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-button, select {
-    padding: 10px 16px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
+.content {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
 }
 button {
-    background-color: #FF5C00;
-    color: white;
-    cursor: pointer;
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF5C00;
+  color: white;
+  cursor: pointer;
 }
-.recall-check {
-    background-color: #FF5C00;
-    font-weight: bold;
-}
-.davy {
-    position: absolute;
-    right: 10%;
-    bottom: 0;
-    height: 300px;
-}
-/* ---------- MOBILE VIEW ---------- */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 1rem;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
-  .hero-text {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: auto;
-  }
-
-  .button {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  #davy-chatbot {
-    bottom: 80px;
-    right: 10px;
-    transform: scale(0.85);
-  }
+button:hover {
+  background-color: #e65300;
 }
