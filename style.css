@@ -100,6 +100,21 @@ body {
   cursor: pointer;
 }
 
+.floating-davy {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-davy img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .hero-inner {
     flex-direction: column;
@@ -108,5 +123,8 @@ body {
   .feature-row {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .floating-davy img {
+    width: 60px;
   }
 }
