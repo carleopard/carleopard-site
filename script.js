@@ -1,1 +1,0 @@
-console.log('CarLeopard script loaded. Ready to add interactivity!');
