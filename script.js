@@ -1,3 +1,1 @@
-
-// Placeholder for future interactivity
-console.log("CarLeopard script loaded.");
+// JavaScript for interactive elements (e.g., swipe left/right search)
