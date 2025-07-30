@@ -1,1 +1,42 @@
-/* Responsive hero section background and layout styling */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background-image: url('davy-hero-small.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.search-bar, .tools, .cta {
+  margin-top: 20px;
+}
+
+.search-bar select, .search-bar button,
+.tools button, .cta button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+}
+
+.recall-check {
+  background-color: orange;
+  color: black;
+}
