@@ -1,61 +1,37 @@
-
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #002b45;
+    color: white;
 }
-
 .hero {
-  background-image: url('assets/davy-hero-small.png');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  position: relative;
+    position: relative;
+    text-align: center;
+    background: url('davy-hero-small.png') no-repeat center/cover;
+    padding: 100px 20px;
 }
-
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 10px;
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
 }
-
-h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
+.hero h1 {
+    font-size: 36px;
+    margin: 20px 0 10px;
 }
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
-
-.search-row, .cta-row {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10px 0;
+.search-bar select,
+.search-bar button,
+.cta-buttons button,
+.recall-button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
 }
-
-button, select {
-  padding: 10px 15px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: none;
-}
-
-button.primary {
-  background-color: #ff5c00;
-  color: white;
-}
-
-button.secondary {
-  background-color: #003366;
-  color: white;
+.davy-img {
+    display: none;
 }
