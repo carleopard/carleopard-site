@@ -1,1 +1,0 @@
-// JavaScript for interactive elements (e.g., swipe left/right search)
