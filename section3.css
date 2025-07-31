@@ -1,0 +1,49 @@
+
+/* Section 3 Styles */
+.sunrise-section {
+  background: url('section3-background.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.section3-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  border-radius: 16px;
+}
+
+.section3-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 24px;
+  width: 300px;
+  text-align: left;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.info-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.03);
+}
+
+.info-box h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.info-box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
