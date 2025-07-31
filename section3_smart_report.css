@@ -1,0 +1,36 @@
+
+.smart-report-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #222;
+}
+.smart-report-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.report-box {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.report-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.report-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.report-box p {
+  font-size: 0.95rem;
+}
