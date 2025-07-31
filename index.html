@@ -34,17 +34,17 @@
     }
 
     .feature-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .feature-box {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 12px;
       padding: 20px;
-      width: 160px;
       text-align: center;
       backdrop-filter: blur(10px);
       transition: transform 0.3s ease;
