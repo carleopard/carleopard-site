@@ -1,113 +1,35 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
-}
 
-.hero-section {
-  background-image: url('https://i.ibb.co/DfVt1MZx/Chat-GPT-Image-Jul-29-2025-10-57-23-AM.png'); /* Replace with real image */
-  background-size: cover;
-  background-position: center;
+/* Section 2 Styling */
+.roadmap-section {
   padding: 60px 20px;
+  background: #001E2B;
+  color: #fff;
   text-align: center;
-  color: white;
-  position: relative;
 }
 
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 900px;
-  margin: 0 auto;
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
-.hero-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.hero-section p {
-  font-size: 1rem;
-  margin-bottom: 30px;
-}
-
-.search-bar {
+.roadmap-steps {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 30px;
 }
 
-.search-bar select,
-.search-bar button {
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: none;
+.step {
+  width: 200px;
+}
+
+.step-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.step-text {
+  margin-top: 10px;
   font-size: 1rem;
-}
-
-.search-btn {
-  background-color: #ff5c00;
-  color: white;
-  font-weight: bold;
-}
-
-.feature-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.feature-box {
-  background: rgba(255, 255, 255, 0.1);
-  width: 150px;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-.feature-box:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.feature-box img {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-.feature-box p {
-  margin: 0;
-  color: white;
-}
-
-.cta-btn {
-  background-color: #ff5c00;
-  color: white;
-  padding: 14px 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .search-bar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feature-boxes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feature-box {
-    width: 90%;
-  }
 }
