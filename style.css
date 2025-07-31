@@ -106,3 +106,38 @@ body.light {
   font-size: 1.2rem;
   color: #DDE1DC;
 }
+
+.section-3 {
+  background: url('https://i.ibb.co/k89JwKL/sunrise-road.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-3-overlay {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem 4rem;
+  border-radius: 16px;
+  max-width: 800px;
+  text-align: center;
+}
+.section-3-overlay h2 {
+  font-size: 2.5rem;
+  color: #0A0F1C;
+}
+.section-3-overlay p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.benefits {
+  list-style: none;
+  padding: 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+.benefits li {
+  margin: 0.5rem 0;
+}
