@@ -1,259 +1,46 @@
-<!-- NAVIGATION BAR -->
-<header class="navbar">
-  <div class="nav-logo">🐆 CarLeopard</div>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <nav class="nav-links" id="nav-menu">
-    <a href="#hero">🏠 Home / Inicio</a>
-    <div class="dropdown">
-      <button class="dropbtn">🧭 Navigate / Navegar</button>
-      <div class="dropdown-content">
-        <a href="#smart-buyer">Smart Buyer™ / Informe Inteligente</a>
-        <a href="#deals">Local Deals / Ofertas Locales</a>
-        <a href="#fuel-picks">Top Picks by Fuel / Mejores por Tipo</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">🛠 Tools / Herramientas</button>
-      <div class="dropdown-content">
-        <a href="#compare">Compare Vehicles / Comparar</a>
-        <a href="#recall">Recall Check / Llamadas</a>
-        <a href="#trade">Trade-In Estimator / Valor Intercambio</a>
-        <a href="#fi">F&I Guide / Guía Financiera</a>
-      </div>
-    </div>
-    <a href="#report">📜 Reports / Reportes</a>
-    <a href="#davy">🦁 Meet Davy / Conoce a Davy</a>
-    <a href="#garage">👤 My Garage / Mi Garaje</a>
-    <a href="#get-started" class="cta-button">📝 Start My Report / Empezar</a>
-  </nav>
-</header>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarLeopard - Smart Buyer</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #000;
-      color: white;
-      overflow-x: hidden;
-    }
-    .hero-section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url('https://i.ibb.co/DfVt1MZx/Chat-GPT-Image-Jul-29-2025-10-57-23-AM.png') center center no-repeat;
-      background-size: cover;
-      position: relative;
-      flex-direction: column;
-      text-align: center;
-    }
-    </div>
-  </div>
-</section>
-
-    .davy-hero {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      max-width: 700px;
-      opacity: 0.2;
-      z-index: 1;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-    .hero-content h1 {
-      font-size: 36px;
-      color: white;
-      margin-bottom: 20px;
-    }
-    .search-bar-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    .search-bar-container input {
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 6px 0 0 6px;
-      border: none;
-      width: 200px;
-    }
-    .search-bar-container button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #FF5C00;
-      color: white;
-      border: none;
-      border-radius: 0 6px 6px 0;
-      cursor: pointer;
-    }
-    .feature-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .icon-box {
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-size: 14px;
-      min-width: 120px;
-      text-align: center;
-      box-shadow: 0 0 8px rgba(0,0,0,0.3);
-    }
-    .roadtrip-section {
-      background: url('https://i.ibb.co/pB9tm5P8/Chat-GPT-Image-Jul-30-2025-10-23-32-PM.png') no-repeat center center fixed;
-      background-size: cover;
-      padding: 100px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      scroll-snap-type: y mandatory;
-    }
-    .roadtrip-step {
-      scroll-snap-align: start;
-      margin: 80px auto;
-      text-align: center;
-      max-width: 600px;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-      padding: 40px 20px;
-      color: white;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(8px);
-    }
-    .roadtrip-step img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .roadtrip-step h2 {
-      font-size: 24px;
-      color: #FF5C00;
-      margin-bottom: 10px;
-    }
-    .roadtrip-step p {
-      font-size: 16px;
-      line-height: 1.5;
-      color: #F4E1C1;
-    }
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 28px;
-      }
-      .search-bar-container input {
-        width: 140px;
-      }
-      .icon-box {
-        min-width: 100px;
-        font-size: 12px;
-      }
-      .roadtrip-step h2 {
-        font-size: 20px;
-      }
-      .roadtrip-step p {
-        font-size: 14px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CarLeopard - Shop Smart</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- HERO SECTION -->
-  <section class="hero-section">
-    <img src="https://i.ibb.co/Y4npwHWh/Chat-GPT-Image-Jul-30-2025-10-09-01-PM.png" alt="Davy the Leopard" class="davy-hero">
-    <div class="hero-content">
-      <h1>Shop Smart. Buy Smarter.</h1>
-      <div class="search-bar-container">
-        <input type="text" placeholder="Enter ZIP Code">
-        <button>Search Smart</button>
-      </div>
-      <div class="feature-icons">
-        <div class="icon-box">✅<br><strong>Smart Buyer™</strong></div>
-        <div class="icon-box">📘<br><strong>Recall Check</strong></div>
-        <div class="icon-box">💵<br><strong>Trade-In Estimator</strong></div>
-        <div class="icon-box">⚖️<br><strong>Compare Vehicles</strong></div>
+
+  <!-- Section 3 + 7 -->
+  <section id="smart-report" class="smart-report-section" style="background-image: url('https://i.ibb.co/hPJyyqf/Chat-GPT-Image-Jul-31-2025-12-06-35-AM.png'); background-size: cover; background-position: center;">
+    <div class="container">
+      <h2>Smart Buyer™ Report Summary</h2>
+      <div class="report-grid">
+        <div class="report-box"><h3>📊 Vehicle Value Score</h3><p>This car is priced well based on the market. Excellent resale projection over 3–5 years.</p></div>
+        <div class="report-box"><h3>🔧 Repair Risk</h3><p>Low-to-moderate risk based on mileage and known service patterns. View common fixes and costs.</p></div>
+        <div class="report-box"><h3>🚨 Safety & Title History</h3><p>Clean title. No major accidents. Excellent NHTSA safety scores and airbag recall compliance.</p></div>
+        <div class="report-box"><h3>💰 Ownership Cost Estimate</h3><p>Estimated monthly fuel and maintenance: $188. Insurance average in your ZIP: $124/mo.</p></div>
+        <div class="report-box"><h3>📄 Negotiation Sheet</h3><p>Includes dealer scorecard, markup analysis, and real-time buyer leverage based on your credit.</p></div>
+        <div class="report-box"><h3>🛣️ Next Steps</h3><p>Ready to schedule your visit? Use My Appointment My Way™ to skip the pressure.</p></div>
       </div>
     </div>
   </section>
 
- <!-- SECTION 2: ROAD TRIP JOURNEY -->
-<section class="roadtrip-section">
-  <div class="roadtrip-step">
-    <img src="https://i.ibb.co/K41jhz1/Chat-GPT-Image-Jul-29-2025-11-34-17-AM.png" alt="Step 1 - Choose Vehicles">
-    <h2>Step 1: Choose Your Top 3 Vehicles</h2>
-    <p>Pick your top 3 — gas, hybrid, electric, or diesel. Davy helps compare the best options.</p>
-  </div>
-  <div class="roadtrip-step">
-    <img src="https://i.ibb.co/dwNL7C3G/Chat-GPT-Image-Jul-29-2025-11-32-51-AM.png" alt="Step 2 - Smart Buyer Report">
-    <h2>Step 2: Run the Smart Buyer™ Report</h2>
-    <p>We scan history, ownership costs, accident risk, and pricing to generate your report.</p>
-  </div>
-  <div class="roadtrip-step">
-    <img src="https://i.ibb.co/mr9GsxJc/Chat-GPT-Image-Jul-29-2025-11-34-20-AM.png" alt="Step 3 - Negotiation Tools">
-    <h2>Step 3: Unlock Negotiation Tools</h2>
-    <p>Get a custom negotiation sheet and dealer scorecards based on your ZIP and credit level.</p>
-  </div>
-  <div class="roadtrip-step">
-    <img src="https://i.ibb.co/1J8rq7sy/Chat-GPT-Image-Jul-29-2025-11-34-23-AM.png" alt="Step 4 - Schedule Test Drive">
-    <h2>Step 4: Schedule Your Test Drive</h2>
-    <p>Use 'My Appointment My Way™' to book without pressure — your time, your terms.</p>
-  </div>
-<!-- <!-- Section 3: Sunrise & Peace of Mind -->
-<section id="section3" class="section sunrise-section">
-  <div class="container">
-    <h2 class="section-title">🌅 Sunrise & Peace of Mind</h2>
-    <p class="section-subtitle">Your Smart Buyer™ journey is complete. Here's what Davy found.</p>
-
-    <div class="info-grid">
-      <div class="info-box">
-        <h3>📊 Vehicle Value Score</h3>
-        <p>This car is priced well based on the market. Excellent resale value projection over 3–5 years.</p>
-      </div>
-
-      <div class="info-box">
-        <h3>🔧 Repair Risk</h3>
-        <p>Low-to-moderate risk based on mileage and known service patterns. View common fixes and costs.</p>
-      </div>
-
-      <div class="info-box">
-        <h3>🚨 Safety & Title History</h3>
-        <p>Clean title. No major accidents. Excellent NHTSA safety scores and airbag recall compliance.</p>
-      </div>
-
-      <div class="info-box">
-        <h3>💰 Ownership Cost Estimate</h3>
-        <p>Estimated monthly fuel and maintenance: $188. Insurance average in your ZIP: $124/mo.</p>
-      </div>
-
-      <div class="info-box">
-        <h3>📄 Negotiation Sheet</h3>
-        <p>Includes dealer scorecard, markup analysis, and real-time buyer leverage based on your credit.</p>
-      </div>
-
-      <div class="info-box">
-        <h3>🛣️ Next Steps</h3>
-        <p>Ready to schedule your visit? Use <em>My Appointment My Way™</em> to skip the pressure.</p>
-      </div>
+  <!-- Section 4 -->
+  <section id="garage-finish" class="garage-section" style="background-image: url('https://i.ibb.co/6qPzqj2/Garage-4.png'); background-size: cover; background-position: center;">
+    <div class="container garage-content">
+      <h2>Welcome Home.</h2>
+      <p>Your car is ready, your paperwork is smart, and your path was protected every step of the way.</p>
+      <p class="garage-thanks">This is what peace of mind feels like. Thanks for shopping with CarLeopard™.</p>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Section 8 -->
+  <section id="final-cta" class="cta-section">
+    <div class="cta-container">
+      <h2>Ready to drive smarter?</h2>
+      <p>Start your journey now with a Smart Buyer™ Report — peace of mind starts here.</p>
+      <a href="#smart-report" class="cta-button">Get My Report</a>
+    </div>
+  </section>
 
- 
-
-.
+</body>
+</html>
