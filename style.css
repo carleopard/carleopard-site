@@ -88,19 +88,5 @@
   overflow: hidden;
 }
 
-.hero-davy-wrapper {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0; /* Behind all content */
-  pointer-events: none;
-}
 
-.hero-davy {
-  max-width: 220px;
-  height: auto;
-  opacity: 0.95;
-}
 
-}
