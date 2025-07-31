@@ -1,5 +1,26 @@
 
-body {
+body {/* Default Light Theme */
+body.light {
+  background-color: #FFFFFF;
+  color: #0A0F1C;
+}
+body.light .tool,
+body.light .report-item {
+  background-color: #F0F0F0;
+  color: #0A0F1C;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #0A0F1C;
+  color: #F4E1C1;
+}
+body.dark .tool,
+body.dark .report-item {
+  background-color: #ffffff0a;
+  color: #F4E1C1;
+}
+
   font-family: 'Manrope', sans-serif;
   background-color: #0A0F1C;
   color: #F4E1C1;
