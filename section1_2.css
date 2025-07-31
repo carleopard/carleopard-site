@@ -1,0 +1,65 @@
+
+/* Section 1 */
+#hero-section {
+  background: url('https://i.ibb.co/0RqJZm52/davy-hero-small.png') no-repeat center;
+  background-size: cover;
+  padding: 100px 20px 60px;
+  color: #fff;
+  text-align: center;
+}
+.hero-search {
+  margin: 20px auto 40px;
+  padding: 12px;
+  width: 90%;
+  max-width: 480px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+.hero-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hero-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+.hero-box:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Section 2 */
+#journey-section {
+  background-color: #0a2e2d;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+.journey-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+.journey-step {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 220px;
+  font-size: 1.1rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.journey-step:hover {
+  transform: scale(1.05);
+}
