@@ -1,7 +1,25 @@
 
 /* Section 1 */
 #hero-section {
-  background: url('https://i.ibb.co/0RqJZm52/davy-hero-small.png') no-repeat center;
+  background: url('<!-- Section 1: Hero with Car Search and Stacked Boxes -->
+<section id="hero-section">
+  <div class="hero-container">
+    <h1>Shop Smart. Buy Smarter.™</h1>
+    <input type="text" placeholder="Search by Make, Model, or ZIP..." class="hero-search"/>
+
+    <div class="hero-boxes-stacked">
+      <div class="hero-box">✅ Smart Insights</div>
+      <div class="hero-box">🔁 Recall Check</div>
+      <div class="hero-box">💵 Trade-In Estimator</div>
+      <div class="hero-box">⚖️ Compare Vehicles</div>
+      <div class="hero-box">🚫 Cars to Avoid</div>
+      <div class="hero-box">📈 Cars That Hold Value</div>
+      <div class="hero-box">🔥 Local Deals</div>
+      <div class="hero-box">⚡ Top Vehicles by Fuel Type</div>
+    </div>
+  </div>
+</section>
+') no-repeat center;
   background-size: cover;
   padding: 100px 20px 60px;
   color: #fff;
