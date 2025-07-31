@@ -1,112 +1,51 @@
 
-.hero-section {
-  background-image: url('https://i.ibb.co/DfVt1MZx/Chat-GPT-Image-Jul-29-2025-10-57-23-AM.png'); /* Placeholder Fusion Background */
-  background-size: cover;
-  background-position: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #1a1a1a;
+  padding: 10px 20px;
   color: white;
-  padding: 80px 20px;
-  text-align: center;
 }
-
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-}
-
-.search-bar {
+.navbar-links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.search-bar select,
-.search-bar .search-btn {
-  padding: 12px 16px;
-  border-radius: 6px;
-  border: none;
-  font-size: 1rem;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-
-.search-bar .search-btn {
-  background-color: #ff5c00;
+.dropbtn {
+  background-color: #1a1a1a;
   color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
 }
-
-.feature-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-
-.feature-box {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-  width: 160px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease;
-}
-
-.feature-box img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-.feature-box span {
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
   display: block;
-  font-size: 1rem;
-  font-weight: 500;
+  text-decoration: none;
 }
-
-.feature-box:hover {
-  transform: translateY(-5px);
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
-.section-two {
-  background-image: url('assets/section2-bg-roadtrip.png'); /* placeholder background */
-  background-size: cover;
-  background-position: center;
-  padding: 60px 20px;
-  color: white;
-  text-align: center;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-
-.roadtrip-heading {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  font-weight: bold;
+#language-toggle {
+  padding: 8px;
 }
-
-.roadtrip-steps {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.step-box {
-  background-color: rgba(0, 0, 0, 0.65);
-  border-radius: 20px;
-  padding: 25px;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-
-.step-box:hover {
-  transform: translateY(-5px);
-}
-
-
-
