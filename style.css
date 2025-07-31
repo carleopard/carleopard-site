@@ -1,0 +1,105 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #0A0F1C;
+  color: #F4E1C1;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://i.ibb.co/8LHdThTQ/Chat-GPT-Image-Jul-30-2025-08-41-46-AM.png') no-repeat center center;
+  background-size: cover;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1300px;
+  flex-wrap: wrap;
+}
+.davy-image img {
+  max-width: 380px;
+}
+.hero-text {
+  max-width: 600px;
+  text-align: left;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  color: #FF5C00;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.search-bar input,
+.search-bar select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  min-width: 150px;
+}
+.search-bar button {
+  background-color: #FF5C00;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+.tool {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  backdrop-filter: blur(5px);
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .davy-image img {
+    max-width: 280px;
+    margin-bottom: 1rem;
+  }
+}
