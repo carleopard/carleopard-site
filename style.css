@@ -1,62 +1,75 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: 'Manrope', sans-serif;
-  background-color: #000;
-  color: white;
+  background-color: #0A0F1C;
+  color: #F4E1C1;
+  margin: 0;
+  padding: 0;
 }
-.journey-section {
-  scroll-behavior: smooth;
+.smartbuyer {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
-.chapter {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.overlay {
-  background: rgba(0, 0, 0, 0.55);
-  padding: 2rem;
-  border-radius: 12px;
+.smartbuyer h1 {
   text-align: center;
-  animation: fadein 2s ease-out forwards;
-}
-.overlay h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
   color: #FF5C00;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
-.overlay p {
-  font-size: 1.2rem;
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.report-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+}
+.report-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.report-item h2 {
+  color: #FF5C00;
+  margin-top: 1rem;
+}
+.report-item p {
+  font-size: 1rem;
   color: #DDE1DC;
 }
-
-/* Backgrounds (placeholder URLs to be replaced with real ones) */
-.factory { background-image: url('https://i.ibb.co/N9kRVVL/factory.jpg'); }
-.registration { background-image: url('https://i.ibb.co/tbCNW9L/dmv.jpg'); }
-.history { background-image: url('https://i.ibb.co/2PN8ByL/bodyshop.jpg'); }
-.twists { background-image: url('https://i.ibb.co/m0xHZ2g/auction.jpg'); }
-.status { background-image: url('https://i.ibb.co/dg61ZC2/dealer-lot.jpg'); }
-.forecast { background-image: url('https://i.ibb.co/NV3Ysd1/sunset-garage.jpg'); }
-
-@keyframes fadein {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.report-cta {
+  text-align: center;
+  margin-top: 4rem;
 }
-
-@media (max-width: 768px) {
-  .overlay h2 {
-    font-size: 1.5rem;
-  }
-  .overlay p {
-    font-size: 1rem;
-  }
+.report-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.report-form input {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  min-width: 180px;
+}
+.report-form button {
+  background-color: #FF5C00;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.note {
+  font-size: 0.95rem;
+  color: #DDE1DC;
 }
