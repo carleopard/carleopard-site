@@ -6,86 +6,57 @@
 }
 body {
   font-family: 'Manrope', sans-serif;
-  background-color: #ffffff;
-  color: #0A0F1C;
+  background-color: #000;
+  color: white;
 }
-.hero {
-  width: 100%;
+.journey-section {
+  scroll-behavior: smooth;
+}
+.chapter {
   height: 100vh;
-  background: url('https://i.ibb.co/7J1BRWFz/Chat-GPT-Image-Jul-31-2025-05-32-35-PM.png') no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
-.hero-overlay {
-  background: rgba(255, 255, 255, 0.4);
   width: 100%;
-  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
   padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  animation: fadein 2s ease-out forwards;
 }
-.hero-text {
-  max-width: 900px;
-}
-.hero-text h1 {
-  color: #FF5C00;
-  font-size: 2.75rem;
+.overlay h2 {
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #FF5C00;
 }
-.hero-text p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: #000000;
-}
-.search-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-}
-.search-bar input,
-.search-bar select {
-  padding: 0.75rem;
-  border-radius: 8px;
-  border: none;
-  min-width: 150px;
-  font-size: 1rem;
-  background: white;
-  color: black;
-}
-.search-bar button {
-  background-color: #FF5C00;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.tool {
-  background: white;
-  color: #0A0F1C;
-  border-radius: 10px;
-  padding: 1rem;
-  font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.overlay p {
+  font-size: 1.2rem;
+  color: #DDE1DC;
 }
 
-/* Responsive */
+/* Backgrounds (placeholder URLs to be replaced with real ones) */
+.factory { background-image: url('https://i.ibb.co/N9kRVVL/factory.jpg'); }
+.registration { background-image: url('https://i.ibb.co/tbCNW9L/dmv.jpg'); }
+.history { background-image: url('https://i.ibb.co/2PN8ByL/bodyshop.jpg'); }
+.twists { background-image: url('https://i.ibb.co/m0xHZ2g/auction.jpg'); }
+.status { background-image: url('https://i.ibb.co/dg61ZC2/dealer-lot.jpg'); }
+.forecast { background-image: url('https://i.ibb.co/NV3Ysd1/sunset-garage.jpg'); }
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2rem;
+  .overlay h2 {
+    font-size: 1.5rem;
   }
-  .hero-text p {
+  .overlay p {
     font-size: 1rem;
   }
 }
