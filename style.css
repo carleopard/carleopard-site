@@ -1,15 +1,10 @@
 
-body {/* Default Light Theme */
-body.light {
-  background-color: #FFFFFF;
-  color: #0A0F1C;
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-body.light .tool,
-body.light .report-item {
-  background-color: #F0F0F0;
-  color: #0A0F1C;
-}
-#theme-toggle {
+button#theme-toggle {
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -17,77 +12,58 @@ body.light .report-item {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 999;
+  z-index: 9999;
 }
-
-/* Dark Theme */
 body.dark {
   background-color: #0A0F1C;
   color: #F4E1C1;
 }
-body.dark .tool,
-body.dark .report-item {
-  background-color: #ffffff0a;
-  color: #F4E1C1;
-}
-
-  font-family: 'Manrope', sans-serif;
-  background-color: #0A0F1C;
-  color: #F4E1C1;
-  margin: 0;
-  padding: 0;
+body.light {
+  background-color: #FFFFFF;
+  color: #0A0F1C;
 }
 .hero {
-  width: 100%;
-  height: 100vh;
-  background: url('https://i.ibb.co/cXDX8sN6/A-leopard-driving-a-car.png') no-repeat center center;
+  background: url('https://i.ibb.co/7J1BRWFz/Chat-GPT-Image-Jul-31-2025-05-32-35-PM.png') no-repeat center center;
   background-size: cover;
+  height: 100vh;
   position: relative;
-}
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.65);
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 2rem;
 }
-.hero-text {
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  text-align: center;
   max-width: 900px;
 }
 .hero-text h1 {
   color: #FF5C00;
   font-size: 2.75rem;
-  margin-bottom: 1rem;
 }
 .hero-text p {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
   color: #DDE1DC;
+  margin-bottom: 1.5rem;
 }
 .search-bar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.75rem;
-  margin-bottom: 2rem;
 }
-.search-bar select, .search-bar input {
+.search-bar select {
   padding: 0.75rem;
-  border-radius: 8px;
+  border-radius: 6px;
   border: none;
   font-size: 1rem;
-  min-width: 160px;
 }
 .search-bar button {
-  background-color: #FF5C00;
+  background: #FF5C00;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   border: none;
-  border-radius: 8px;
-  font-weight: bold;
+  border-radius: 6px;
   cursor: pointer;
 }
 .tool-grid {
@@ -99,93 +75,34 @@ body.dark .report-item {
 .tool {
   background: white;
   color: #0A0F1C;
-  border-radius: 10px;
   padding: 1rem;
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.journey-section .chapter {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.factory { background-image: url('https://i.ibb.co/N9kRVVL/factory.jpg'); }
-.registration { background-image: url('https://i.ibb.co/tbCNW9L/dmv.jpg'); }
-.history { background-image: url('https://i.ibb.co/2PN8ByL/bodyshop.jpg'); }
-.twists { background-image: url('https://i.ibb.co/m0xHZ2g/auction.jpg'); }
-.status { background-image: url('https://i.ibb.co/dg61ZC2/dealer-lot.jpg'); }
-.forecast { background-image: url('https://i.ibb.co/NV3Ysd1/sunset-garage.jpg'); }
-.chapter .overlay {
-  background: rgba(0,0,0,0.6);
-  padding: 2rem;
-  text-align: center;
-  border-radius: 12px;
-}
-.smartbuyer {
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-.smartbuyer h1 {
-  text-align: center;
-  color: #FF5C00;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-}
-.report-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-.report-item {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-}
-.report-item img {
-  width: 100%;
   border-radius: 8px;
 }
-.report-item h2 {
-  color: #FF5C00;
-  margin-top: 1rem;
+.transition {
+  height: 50vh;
+  background: linear-gradient(to bottom, rgba(10,15,28,1) 0%, rgba(0,0,0,0.8) 100%);
 }
-.report-cta {
-  text-align: center;
-  margin-top: 3rem;
-}
-.report-form {
+.scroll-dark-section {
+  background: url('https://i.ibb.co/fVjn1Dqy/Chat-GPT-Image-Jul-31-2025-06-54-11-PM.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
+  align-items: center;
 }
-.report-form input {
-  padding: 0.75rem;
-  border-radius: 6px;
-  border: none;
-  font-size: 1rem;
-  min-width: 180px;
+.scroll-dark-section .overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  text-align: center;
 }
-.report-form button {
-  background-color: #FF5C00;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
+.scroll-dark-section .overlay h2 {
+  font-size: 2.5rem;
+  color: #FF5C00;
 }
-.note {
-  font-size: 0.95rem;
+.scroll-dark-section .overlay p {
+  font-size: 1.2rem;
   color: #DDE1DC;
-}
-@media (max-width: 768px) {
-  .tool-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
