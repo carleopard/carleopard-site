@@ -500,5 +500,25 @@ ul {
 
   z-index: 1;
 }
+.social-media-icons {
+  margin: 25px 0;
+}
+
+.social-media-icons a {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.social-media-icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) saturate(100%) invert(92%) sepia(11%) saturate(746%) hue-rotate(330deg) brightness(95%) contrast(92%);
+  transition: transform 0.3s ease;
+}
+
+.social-media-icons a:hover img {
+  transform: scale(1.15);
+  filter: none;
+}
 
 
