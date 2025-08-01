@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -5,33 +6,89 @@ body {
   color: #F4E1C1;
 }
 .hero {
-  background: url('https://i.ibb.co/LdkJBcS9/Chat-GPT-Image-Jul-31-2025-05-32-35-PM.png') no-repeat center center;
-  background-size: cover;
-  padding: 8rem 2rem 6rem;
+  background: #000;
+  padding: 6rem 2rem 3rem;
   text-align: center;
 }
-.hero-text h1 {
+.hero h1 {
   font-size: 3rem;
   color: #FF5C00;
 }
-.hero-text p {
+.hero p {
   font-size: 1.2rem;
   color: #DDE1DC;
 }
-.button-grid {
+.search-bar {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.search-bar input {
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+.search-bar button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #FF5C00;
+  color: #fff;
+  cursor: pointer;
+}
+.tool-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 2rem;
 }
-.button-grid button {
-  padding: 10px 20px;
-  background-color: #1a1e2e;
-  color: #f4e1c1;
-  border: 1px solid #333;
+.tool {
+  background: #fff;
+  color: #0A0F1C;
+  padding: 1rem;
+  font-weight: bold;
   border-radius: 8px;
-  cursor: pointer;
+  text-align: center;
 }
-.button-grid button:hover {
-  background-color: #FF5C00;
+
+/* Section 2 Scroll Visuals */
+.section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+.section-2a {
+  background-image: url('https://i.ibb.co/w2qbDHt/Chat-GPT-Image-Jul-31-2025-10-42-50-PM.png');
+}
+.section-2b {
+  background-image: url('https://i.ibb.co/6SpWH7S/Chat-GPT-Image-Jul-31-2025-10-13-50-PM.png');
+}
+.section-2c {
+  background-image: url('https://i.ibb.co/TxyzD4Pb/Chat-GPT-Image-Jul-31-2025-08-23-32-PM.png');
+}
+.section-2d {
+  background-image: url('https://i.ibb.co/MZL2Wq9/davy-sunrise.jpg');
+}
+.overlay-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+}
+.overlay-box h2 {
+  font-size: 2.25rem;
+  color: #FF5C00;
+}
+.overlay-box p {
+  font-size: 1.1rem;
+  color: #DDE1DC;
 }

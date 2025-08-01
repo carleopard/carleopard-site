@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("CarLeopard Hero Section Loaded");
+  console.log("Section 2 loaded");
 });
