@@ -1,3 +1,92 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0d0d0d;
+  color: white;
+  z-index: 999;
+  transition: all 0.3s ease;
+  padding: 18px 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#langToggle {
+  background: #f4e1c1;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#langToggle:hover {
+  background: #ffddb0;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 220px;
+  z-index: 998;
+  padding: 20px;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
 
 body {
   font-family: 'Manrope', sans-serif;
