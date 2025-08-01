@@ -1,47 +1,210 @@
-<div id="navbar" class="navbar">
-  <div class="navbar-left">
-    <a href="#"><img src="davy-paw-logo.png" alt="CarLeopard Logo" class="logo"></a>
-  </div>
-  <div class="navbar-center">
-    <div class="dropdown">
-      <button class="dropbtn">Shop Smart</button>
-      <div class="dropdown-content">
-        <a href="#smartbuyer">Smart Buyer™</a>
-        <a href="#recall">Recall Check</a>
-        <a href="#tradein">Trade-In Estimator</a>
-        <a href="#compare">Compare Vehicles</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CarLeopard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --text-color: #ffffff;
+      --accent: #ff5c00;
+    }
+
+    [data-theme="light"] {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav {
+      background-color: rgba(0,0,0,0.85);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: transform 0.3s ease, padding 0.3s;
+    }
+
+    nav.shrink {
+      padding: 0.5rem 2rem;
+    }
+
+    nav.hide {
+      transform: translateY(-100%);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 6px;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 0.5rem 0;
+      color: var(--text-color);
+    }
+
+    .toggle-buttons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .mobile-toggle, .dark-toggle, .lang-toggle {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      color: var(--text-color);
+      cursor: pointer;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+      }
+
+      .nav-links.mobile-open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <nav id="navbar">
+    <div class="logo">CarLeopard</div>
+    <button class="hamburger mobile-toggle" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" data-en="Home" data-es="Inicio">Home</a>
+      <div class="dropdown">
+        <a href="#shop" data-en="Shop Smart" data-es="Compra Inteligente">Shop Smart</a>
+        <div class="dropdown-content">
+          <a href="#smart-buyer" data-en="Smart Buyer™ Report" data-es="Informe Inteligente™">Smart Buyer™ Report</a>
+          <a href="#recalls" data-en="Recall Guard" data-es="Alerta de Revisión">Recall Guard</a>
+          <a href="#trade" data-en="TradeMax™" data-es="TradeMax™">TradeMax™</a>
+          <a href="#compare" data-en="Compare Vehicles" data-es="Comparar Vehículos">Compare Vehicles</a>
+        </div>
       </div>
+      <a href="#deals" data-en="Local Deals" data-es="Ofertas Locales">Local Deals</a>
+      <a href="#quiz" data-en="Car Quiz" data-es="Quiz de Autos">Car Quiz</a>
+      <a href="#about" data-en="About" data-es="Acerca">About</a>
+      <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Explore</button>
-      <div class="dropdown-content">
-        <a href="#avoid">Cars to Avoid</a>
-        <a href="#valuecars">Hold Value Cars</a>
-        <a href="#deals">Local Deals</a>
-        <a href="#fuel">Fuel Type Picks</a>
-      </div>
+    <div class="toggle-buttons">
+      <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+      <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Post Purchase</button>
-      <div class="dropdown-content">
-        <a href="#garage">Digital Garage</a>
-        <a href="#concierge">Concierge Tools</a>
-        <a href="#fianance">Loan / F&I Monitoring</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Learn</button>
-      <div class="dropdown-content">
-        <a href="#faq">Car Shopping 101</a>
-        <a href="#quiz">Car Quiz</a>
-        <a href="#glossary">Glossary</a>
-      </div>
-    </div>
-  </div>
-  <div class="navbar-right">
-    <button class="lang-toggle">EN / ES</button>
-    <button class="dark-toggle">🐾</button>
-  </div>
+  </nav>
+
+  <main style="padding-top: 80px;">
+    <section style="padding: 5rem; text-align: center;">
+      <h1>Welcome to CarLeopard</h1>
+      <p>Explore the ultimate car shopping experience.</p>
+    </section>
+  </main>
+
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+      navbar.classList.toggle("shrink", scrollTop > 50);
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
+    function toggleDarkMode() {
+      const body = document.body;
+      const isDark = body.getAttribute("data-theme") === "dark";
+      body.setAttribute("data-theme", isDark ? "light" : "dark");
+    }
+
+    function toggleLanguage() {
+      const current = document.querySelector(".lang-toggle");
+      const newLang = current.innerText === "EN" ? "ES" : "EN";
+      current.innerText = newLang;
+
+      const allLabels = document.querySelectorAll("[data-en]");
+      allLabels.forEach(el => {
+        el.innerText = newLang === "EN" ? el.getAttribute("data-en") : el.getAttribute("data-es");
+      });
+    }
+
+    function toggleMobileMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("mobile-open");
+    }
+  </script>
+
+</body>
+</html>
+
 </div>
 
 </header>
