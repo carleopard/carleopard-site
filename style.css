@@ -872,4 +872,14 @@ toggle.addEventListener("click", () => {
   toggle.textContent = isLight ? "☀️" : "🌙";
   localStorage.setItem("theme", isLight ? "light" : "dark");
 });
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #000;
+  transition: top 0.3s ease, padding 0.3s ease;
+  padding: 18px 20px;
+}
 
