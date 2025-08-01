@@ -583,4 +583,68 @@ ul {
   color: #ccc;
   margin-top: 10px;
 }
+.final-cta {
+  background: url('https://i.ibb.co/MZL2Wq9/davy-sunrise.jpg') center/cover no-repeat;
+  color: #f4e1c1;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.final-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f4e1c1;
+}
+
+.final-cta p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.cta-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff5c00;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #e25000;
+}
+
+.btn-secondary {
+  background-color: #1f1f2e;
+  color: #f4e1c1;
+}
+
+.btn-secondary:hover {
+  background-color: #2a2a3d;
+}
+
+.btn-outline {
+  border: 2px solid #f4e1c1;
+  color: #f4e1c1;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #f4e1c1;
+  color: #1a1a2f;
+}
 
