@@ -1,3 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Section 5 (Virtual Test Drive) loaded.");
-});
+document.addEventListener('DOMContentLoaded', () => console.log('Full site loaded.'));
