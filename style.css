@@ -840,4 +840,36 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("shrink");
   }
 });
+:root {
+  --bg-color: #0d0d0d;
+  --text-color: #ffffff;
+  --accent-color: #FF5C00;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Light theme override */
+body.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #FF5C00;
+}
+const toggle = document.getElementById("themeToggle");
+const body = document.body;
+
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+  body.classList.add("light-theme");
+  toggle.textContent = "☀️";
+}
+
+toggle.addEventListener("click", () => {
+  body.classList.toggle("light-theme");
+  const isLight = body.classList.contains("light-theme");
+  toggle.textContent = isLight ? "☀️" : "🌙";
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+});
 
