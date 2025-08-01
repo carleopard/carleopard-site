@@ -946,3 +946,32 @@ body.dark .hero {
   text-align: center;
   color: #fff;
 }
+.section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45); /* translucent dark overlay */
+  z-index: 1;
+}
+
+.section-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2); /* optional: soft box behind text */
+  border-radius: 12px;
+}
