@@ -1,65 +1,49 @@
-<header class="navbar" id="navbar">
-  <div class="navbar-container">
-    <a href="#" class="logo">
-      <img src="https://i.ibb.co/mr9dX0Hj/Davy-arms-crossed.png" alt="CarLeopard Logo" />
-    </a>
-
-    <nav class="nav-links">
-      <div class="dropdown">
-        <button class="dropbtn">Shop Smart</button>
-        <div class="dropdown-content">
-          <a href="#">Smart Buyer™ Report</a>
-          <a href="#">Recall Check</a>
-          <a href="#">Trade-In Estimator</a>
-          <a href="#">Compare Vehicles</a>
-          <a href="#">Max Savings Report™</a>
-          <a href="#">Dealer Decoder™</a>
-          <a href="#">LotProof™ Verified</a>
-        </div>
+<div id="navbar" class="navbar">
+  <div class="navbar-left">
+    <a href="#"><img src="davy-paw-logo.png" alt="CarLeopard Logo" class="logo"></a>
+  </div>
+  <div class="navbar-center">
+    <div class="dropdown">
+      <button class="dropbtn">Shop Smart</button>
+      <div class="dropdown-content">
+        <a href="#smartbuyer">Smart Buyer™</a>
+        <a href="#recall">Recall Check</a>
+        <a href="#tradein">Trade-In Estimator</a>
+        <a href="#compare">Compare Vehicles</a>
       </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Explore</button>
-        <div class="dropdown-content">
-          <a href="#">Top Cars by Fuel Type</a>
-          <a href="#">🚫 Cars to Avoid</a>
-          <a href="#">📈 Cars That Hold Value</a>
-          <a href="#">🔥 Local Deals Near You</a>
-          <a href="#">🚗 Virtual Test Drive</a>
-          <a href="#">EV vs Gas Guide</a>
-        </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Explore</button>
+      <div class="dropdown-content">
+        <a href="#avoid">Cars to Avoid</a>
+        <a href="#valuecars">Hold Value Cars</a>
+        <a href="#deals">Local Deals</a>
+        <a href="#fuel">Fuel Type Picks</a>
       </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Post Purchase</button>
-        <div class="dropdown-content">
-          <a href="#">Maintenance Tracker</a>
-          <a href="#">Digital Garage</a>
-          <a href="#">ROI Tracker</a>
-          <a href="#">Warranty Reminders</a>
-          <a href="#">Roadside Assistance</a>
-          <a href="#">Repair Guide</a>
-        </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Post Purchase</button>
+      <div class="dropdown-content">
+        <a href="#garage">Digital Garage</a>
+        <a href="#concierge">Concierge Tools</a>
+        <a href="#fianance">Loan / F&I Monitoring</a>
       </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Learn</button>
-        <div class="dropdown-content">
-          <a href="#">Car Quiz</a>
-          <a href="#">F&I Add-Ons Guide</a>
-          <a href="#">Used vs New</a>
-          <a href="#">Buying Tips</a>
-          <a href="#">Safety Ratings</a>
-          <a href="#">Cost Calculator</a>
-        </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Learn</button>
+      <div class="dropdown-content">
+        <a href="#faq">Car Shopping 101</a>
+        <a href="#quiz">Car Quiz</a>
+        <a href="#glossary">Glossary</a>
       </div>
-    </nav>
-
-    <div class="nav-actions">
-      <button class="lang-toggle">EN / ES</button>
-      <button class="paw-toggle">🐾</button>
     </div>
   </div>
+  <div class="navbar-right">
+    <button class="lang-toggle">EN / ES</button>
+    <button class="dark-toggle">🐾</button>
+  </div>
+</div>
+
 </header>
 
   </div>
@@ -173,7 +157,31 @@
       localStorage.setItem('theme', isDark ? 'light' : 'dark');
       toggleBtn.innerText = isDark ? '🌙' : '🌞';
     });
-  </script>
+  <script>
+  const navbar = document.getElementById("navbar");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    // Shrink navbar padding
+    if (currentScrollY > 80) {
+      navbar.style.padding = "10px 20px";
+    } else {
+      navbar.style.padding = "18px 20px";
+    }
+
+    // Auto-hide navbar on scroll down
+    if (currentScrollY > lastScrollY) {
+      navbar.style.top = "-80px";
+    } else {
+      navbar.style.top = "0";
+    }
+
+    lastScrollY = currentScrollY;
+  });
+</script>
+
 </body>
 </html>
 
