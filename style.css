@@ -922,3 +922,27 @@ footer {
   transform: scale(1.2);
 }
 
+/* === DARK MODE PATCH === */
+body.dark {
+  background-color: #0A0F1C;
+  color: #F4E1C1;
+}
+
+body.dark .section,
+body.dark .hero {
+  background-color: #0A0F1C;
+  color: #F4E1C1;
+}
+
+.section, .hero {
+  background-color: #0A0F1C;
+  color: #F4E1C1;
+}
+
+.overlay, .section .overlay, .hero-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
