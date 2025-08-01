@@ -8,25 +8,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">CarLeopard</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">How It Works</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="navbar">
+    <div class="logo">CarLeopard</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tools</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
   </header>
 
   <section class="hero">
-    <img src="assets/hero.jpg" alt="Hero Image" class="hero-img" />
-    <div class="hero-text">
-      <h1>Drive Smart with CarLeopard</h1>
-      <p>Your Car. Your Terms.™</p>
-      <input type="text" class="search-bar" placeholder="Search by Make, Model, or ZIP" />
+    <img src="assets/hero.jpg" alt="Hero" class="hero-img">
+    <div class="hero-overlay">
+      <h1>Search Smart. Shop Bold.</h1>
+      <form class="search-form">
+        <select><option>New</option><option>Used</option></select>
+        <input type="text" placeholder="Make">
+        <input type="text" placeholder="Model">
+        <input type="text" placeholder="ZIP Code">
+        <button type="submit">Search</button>
+      </form>
     </div>
   </section>
 
