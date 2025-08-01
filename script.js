@@ -1,48 +1,31 @@
-
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-if (darkModeToggle) {
-    darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-    });
-}
-
-// Load theme on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-    }
+// Dark mode toggle
+const darkToggle = document.getElementById("dark-toggle");
+darkToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  darkToggle.textContent = document.body.classList.contains("light-mode") ? "☀️" : "🌙";
+  localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
 });
 
-// Mobile Hamburger Toggle
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-}
-
-// Navbar shrink and hide on scroll
-let lastScrollTop = 0;
-const navbar = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        navbar.classList.add('nav-hidden'); // Scroll down
-    } else {
-        navbar.classList.remove('nav-hidden'); // Scroll up
-    }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    navbar.classList.toggle('nav-shrink', scrollTop > 50);
+// Language toggle
+const langToggle = document.getElementById("lang-toggle");
+langToggle.addEventListener("click", () => {
+  const current = langToggle.textContent;
+  langToggle.textContent = current === "🇺🇸" ? "🇪🇸" : "🇺🇸";
+  // Optional: add content switch logic here
 });
 
-// Language Toggle (English/Spanish)
-const langToggle = document.getElementById('langToggle');
-if (langToggle) {
-    langToggle.addEventListener('click', () => {
-        document.body.classList.toggle('spanish');
-    });
-}
+// Hamburger toggle
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+// Load preferred theme
+window.addEventListener("DOMContentLoaded", () => {
+  const theme = localStorage.getItem("theme");
+  if (theme === "light") {
+    document.body.classList.add("light-mode");
+    darkToggle.textContent = "☀️";
+  }
+});
