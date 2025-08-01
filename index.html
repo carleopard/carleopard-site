@@ -1,46 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CarLeopard</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header id="navbar">
-    <div class="nav-container">
-      <div class="logo">🐆 CarLeopard</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a href="#">Shop Smart</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Smart Buyer™</a></li>
-              <li><a href="#">Recall Check</a></li>
-              <li><a href="#">Compare Vehicles</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Explore</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Cars to Avoid</a></li>
-              <li><a href="#">Hold Value Cars</a></li>
-              <li><a href="#">Fuel Type Picks</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Post Purchase</a></li>
-          <li><a href="#">Learn</a></li>
-        </ul>
-      </nav>
-      <div class="nav-buttons">
-        <button id="langToggle">EN / ES</button>
-        <button id="themeToggle">🌙</button>
-        <button id="menuToggle" class="hamburger">☰</button>
+<!-- NAVIGATION BAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="/" class="logo">CarLeopard</a>
+
+    <nav class="nav-links" id="nav-links">
+      <div class="dropdown">
+        <button class="dropbtn">Shop Smart ▾</button>
+        <div class="dropdown-content">
+          <a href="#">Smart Buyer™ Report</a>
+          <a href="#">Recall Check</a>
+          <a href="#">Trade-In Estimator</a>
+          <a href="#">Compare Vehicles</a>
+          <a href="#">Cars to Avoid</a>
+          <a href="#">Cars That Hold Value</a>
+          <a href="#">Local Deals</a>
+          <a href="#">Top Vehicles by Fuel Type</a>
+        </div>
       </div>
+      <a href="#">How It Works</a>
+      <a href="#">Why CarLeopard</a>
+      <a href="#">About</a>
+    </nav>
+
+    <div class="nav-controls">
+      <button id="lang-toggle" aria-label="Toggle Language">🇺🇸</button>
+      <button id="dark-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      <button id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
     </div>
     <div id="mobileMenu" class="mobile-menu">
       <a href="#">Home</a>
