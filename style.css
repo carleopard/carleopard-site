@@ -9,85 +9,80 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 2rem;
-  background-color: #000;
+  background: #000;
 }
 
-.navbar .logo {
-  color: #ff5c00;
-  font-weight: bold;
+.logo {
+  color: orange;
   font-size: 1.5rem;
 }
 
-.navbar ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-.navbar a {
-  color: #fff;
-  text-decoration: none;
+.nav-links li {
+  cursor: pointer;
 }
 
 .hero {
   position: relative;
-  text-align: center;
+  height: 50vh;
+  background: url('hero.jpg') no-repeat center center/cover;
 }
 
-.hero-image {
-  width: 100%;
-  height: auto;
-  max-height: 480px;
-  object-fit: cover;
-}
-
-.hero-text {
+.hero-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-text h1 {
+.hero h1 {
   font-size: 2.5rem;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.hero-text input {
-  padding: 0.7rem;
-  width: 300px;
-  max-width: 90%;
-  border: none;
-  border-radius: 5px;
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 2rem;
-  background-color: #000;
 }
 
 .tool {
-  background-color: #222;
+  background: #222;
   padding: 1rem;
-  border-radius: 10px;
   text-align: center;
-  font-weight: bold;
-  color: #ffa500;
+  border-radius: 8px;
+  font-size: 0.95rem;
 }
 
 footer {
-  background-color: #000;
   text-align: center;
   padding: 1rem;
-  color: #aaa;
+  background: #000;
+  margin-top: 2rem;
 }
