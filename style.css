@@ -329,5 +329,48 @@ ul {
   line-height: 2;
   font-size: 1.1em;
 }
+/* Shared section styling */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+/* Section 7 styles */
+.section7 {
+  background-image: url('https://i.ibb.co/vx1H9KPd/Chat-GPT-Image-Jul-31-2025-08-48-47-PM.png');
+}
+
+/* Section 8 styles */
+.section8 {
+  background-image: url('https://i.ibb.co/5xPHntD/Chat-GPT-Image-Jul-31-2025-09-41-18-PM.png'); /* Replace with your image if needed */
+}
+
+.section-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+
+.privacy-tools {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.privacy-tools li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
 
 
