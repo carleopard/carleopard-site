@@ -372,5 +372,57 @@ ul {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
+.section-9 {
+  background-image: url('https://i.ibb.co/vx1H9KPd/Chat-GPT-Image-Jul-31-2025-08-48-47-PM.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.section9-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.section9-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.section9-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.summary-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.summary-list li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.cta-button .btn-primary {
+  background-color: #ff5c00;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button .btn-primary:hover {
+  background-color: #e54d00;
+}
 
 
