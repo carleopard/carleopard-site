@@ -424,5 +424,19 @@ ul {
 .cta-button .btn-primary:hover {
   background-color: #e54d00;
 }
+.section-9 a {
+  color: #ff5c00; /* Match your brand orange */
+  text-decoration: underline;
+}
+
+.section-9 a:hover {
+  color: #ffaa00;
+}
+
+.summary-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 
