@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Section 2 loaded");
+  console.log("Section 3 (Sunrise) loaded");
 });

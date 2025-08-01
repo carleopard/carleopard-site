@@ -1,94 +1,41 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #0A0F1C;
   color: #F4E1C1;
 }
-.hero {
-  background: #000;
-  padding: 6rem 2rem 3rem;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 3rem;
-  color: #FF5C00;
-}
-.hero p {
-  font-size: 1.2rem;
-  color: #DDE1DC;
-}
-.search-bar {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-.search-bar input {
-  padding: 0.75rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-}
-.search-bar button {
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  border: none;
-  background-color: #FF5C00;
-  color: #fff;
-  cursor: pointer;
-}
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.tool {
-  background: #fff;
-  color: #0A0F1C;
-  padding: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Section 2 Scroll Visuals */
-.section {
-  height: 100vh;
+.section-3 {
+  background-image: url('https://i.ibb.co/MZL2Wq9/davy-sunrise.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 120px 20px;
+  color: white;
   text-align: center;
-  padding: 40px;
 }
-.section-2a {
-  background-image: url('https://i.ibb.co/fVjn1Dqy/Chat-GPT-Image-Jul-31-2025-06-54-11-PM.png');
-}
-.section-2b {
-  background-image: url('https://i.ibb.co/6SpWH7S/Chat-GPT-Image-Jul-31-2025-10-13-50-PM.png');
-}
-.section-2c {
-  background-image: url('https://i.ibb.co/TxyzD4Pb/Chat-GPT-Image-Jul-31-2025-08-23-32-PM.png');
-}
-.section-2d {
-  background-image: url('https://i.ibb.co/MZL2Wq9/davy-sunrise.jpg');
-}
-.overlay-box {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
+.section-3-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 60px 20px;
   border-radius: 12px;
-  max-width: 700px;
+  max-width: 800px;
+  margin: auto;
+  backdrop-filter: blur(2px);
 }
-.overlay-box h2 {
-  font-size: 2.25rem;
-  color: #FF5C00;
+.section-3-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
-.overlay-box p {
+.section-3-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.section-3-content ul {
+  list-style: none;
+  padding: 0;
   font-size: 1.1rem;
-  color: #DDE1DC;
+}
+.section-3-content li {
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
