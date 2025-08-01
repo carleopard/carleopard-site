@@ -9,33 +9,34 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  padding: 120px 20px;
-  color: white;
+  padding: 100px 20px;
   text-align: center;
+  position: relative;
 }
-.section-3-overlay {
-  background: rgba(0, 0, 0, 0.45);
-  padding: 60px 20px;
-  border-radius: 12px;
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px 30px;
+  border-radius: 15px;
   max-width: 800px;
-  margin: auto;
-  backdrop-filter: blur(2px);
+  margin: 0 auto;
 }
-.section-3-content h2 {
+.section-content h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #FF5C00;
 }
-.section-3-content p {
+.section-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #DDE1DC;
 }
-.section-3-content ul {
-  list-style: none;
+.summary-list {
+  list-style-type: none;
   padding: 0;
-  font-size: 1.1rem;
+  margin: 0;
 }
-.section-3-content li {
-  margin-bottom: 12px;
-  line-height: 1.5;
+.summary-list li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #F4E1C1;
 }

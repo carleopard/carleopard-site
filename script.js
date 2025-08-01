@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Section 3 (Sunrise) loaded");
+  console.log("Section 3 (Sunrise) fully loaded");
 });
