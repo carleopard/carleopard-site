@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("CarLeopard site loaded.");
+  console.log("Section 5 (Virtual Test Drive) loaded.");
 });
