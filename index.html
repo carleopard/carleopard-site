@@ -2,252 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Car Leopard</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <style>
-    :root {
-      --bg-color: #0d0d0d;
-      --text-color: #ffffff;
-      --accent: #ff5c00;
-    }
-
-    [data-theme="light"] {
-      --bg-color: #ffffff;
-      --text-color: #000000;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    nav {
-      background-color: rgba(0,0,0,0.85);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      transition: transform 0.3s ease, padding 0.3s;
-    }
-
-    nav.shrink {
-      padding: 0.5rem 2rem;
-    }
-
-    nav.hide {
-      transform: translateY(-100%);
-    }
-
-    .logo {
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .dropdown {
-      position: relative;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #222;
-      padding: 1rem;
-      border-radius: 6px;
-      top: 100%;
-      left: 0;
-      z-index: 999;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown-content a {
-      display: block;
-      padding: 0.5rem 0;
-      color: var(--text-color);
-    }
-
-    .toggle-buttons {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .mobile-toggle, .dark-toggle, .lang-toggle {
-      background: none;
-      border: none;
-      font-size: 1.2rem;
-      color: var(--text-color);
-      cursor: pointer;
-    }
-
-    .hamburger {
-      display: none;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #111;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 2rem;
-      }
-
-      .nav-links.mobile-open {
-        display: flex;
-      }
-
-      .hamburger {
-        display: block;
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarLeopard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body data-theme="dark">
-
-  <nav id="navbar">
-    <div class="logo">CarLeopard</div>
-    <button class="hamburger mobile-toggle" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
-    <div class="nav-links" id="navLinks">
-      <a href="#home" data-en="Home" data-es="Inicio">Home</a>
-      <div class="dropdown">
-        <a href="#shop" data-en="Shop Smart" data-es="Compra Inteligente">Shop Smart</a>
-        <div class="dropdown-content">
-          <a href="#smart-buyer" data-en="Smart Buyer™ Report" data-es="Informe Inteligente™">Smart Buyer™ Report</a>
-          <a href="#recalls" data-en="Recall Guard" data-es="Alerta de Revisión">Recall Guard</a>
-          <a href="#trade" data-en="TradeMax™" data-es="TradeMax™">TradeMax™</a>
-          <a href="#compare" data-en="Compare Vehicles" data-es="Comparar Vehículos">Compare Vehicles</a>
-        </div>
+<body>
+  <!-- Navbar -->
+  <header id="navbar">
+    <div class="nav-container">
+      <div class="logo">🐆 CarLeopard</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Shop Smart</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Smart Buyer™</a></li>
+              <li><a href="#">Recall Check</a></li>
+              <li><a href="#">Compare Vehicles</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Explore</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Cars to Avoid</a></li>
+              <li><a href="#">Hold Value Cars</a></li>
+              <li><a href="#">Fuel Type Picks</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Post Purchase</a></li>
+          <li><a href="#">Learn</a></li>
+        </ul>
+      </nav>
+      <div class="nav-buttons">
+        <button id="langToggle">EN / ES</button>
+        <button id="themeToggle">🌙</button>
+        <button id="menuToggle" class="hamburger">☰</button>
       </div>
-      <a href="#deals" data-en="Local Deals" data-es="Ofertas Locales">Local Deals</a>
-      <a href="#quiz" data-en="Car Quiz" data-es="Quiz de Autos">Car Quiz</a>
-      <a href="#about" data-en="About" data-es="Acerca">About</a>
-      <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
     </div>
-    <div class="toggle-buttons">
-      <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
-      <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#">Home</a>
+      <a href="#">Smart Buyer™</a>
+      <a href="#">Recall Check</a>
+      <a href="#">Compare Vehicles</a>
+      <a href="#">Cars to Avoid</a>
+      <a href="#">Hold Value Cars</a>
+      <a href="#">Fuel Type Picks</a>
+      <a href="#">Post Purchase</a>
+      <a href="#">Learn</a>
     </div>
-  </nav>
+  </header>
 
-  <main style="padding-top: 80px;">
-    <section style="padding: 5rem; text-align: center;">
-      <h1>Welcome to CarLeopard</h1>
-      <p>Explore the ultimate car shopping experience.</p>
-    </section>
-  </main>
+  <!-- Hero section placeholder -->
+  <section class="hero">
+    <h1>Your Road. Your Terms.</h1>
+    <p>Car Shopping without the Claws.</p>
+  </section>
 
   <script>
-    let lastScrollTop = 0;
+    // Hide/show on scroll
+    let lastScrollY = window.scrollY;
     const navbar = document.getElementById("navbar");
-
-    window.addEventListener("scroll", function () {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        navbar.classList.add("hide");
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        navbar.style.top = "-80px";
       } else {
-        navbar.classList.remove("hide");
+        navbar.style.top = "0";
       }
-      navbar.classList.toggle("shrink", scrollTop > 50);
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      lastScrollY = currentScrollY;
     });
 
-    function toggleDarkMode() {
-      const body = document.body;
-      const isDark = body.getAttribute("data-theme") === "dark";
-      body.setAttribute("data-theme", isDark ? "light" : "dark");
-    }
+    // Mobile menu toggle
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    });
 
-    function toggleLanguage() {
-      const current = document.querySelector(".lang-toggle");
-      const newLang = current.innerText === "EN" ? "ES" : "EN";
-      current.innerText = newLang;
-
-      const allLabels = document.querySelectorAll("[data-en]");
-      allLabels.forEach(el => {
-        el.innerText = newLang === "EN" ? el.getAttribute("data-en") : el.getAttribute("data-es");
-      });
-    }
-
-    function toggleMobileMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("mobile-open");
-    }
+    // Language toggle
+    document.getElementById("langToggle").addEventListener("click", () => {
+      const currentURL = window.location.href;
+      if (currentURL.includes("index-es")) {
+        window.location.href = "index.html";
+      } else {
+        window.location.href = "index-es.html";
+      }
+    });
   </script>
-
 </body>
 </html>
 
-</div>
-
-</header>
-
-  </div>
-</header>
-
-<!-- Mobile Menu (optional) -->
-<div id="mobileMenu" class="mobile-menu">
-  <a href="#section1">Home</a>
-  <a href="#section2">How It Works</a>
-  <a href="#section3">Smart Tools</a>
-  <a href="#section4">Buyer Report</a>
-  <a href="#section5">Deals</a>
-  <a href="#section10">Contact</a>
-</div>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CarLeopard Dark Mode + Scroll</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="dark">
-  <button id="themeToggle">🌙</button>
-
-  // Language toggle
-  document.getElementById("langToggle").addEventListener("click", () => {
-    const currentURL = window.location.href;
-    if (currentURL.includes("index-es.html")) {
-      window.location.href = "index.html";
-    } else {
-      window.location.href = "index-es.html";
-    }
-  });
-
-  // Mobile menu toggle
-  document.getElementById("menuToggle").addEventListener("click", () => {
-    const menu = document.getElementById("mobileMenu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-  });
 
  
 </script>
