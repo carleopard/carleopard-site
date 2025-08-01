@@ -20,7 +20,7 @@ document.getElementById("hamburger").addEventListener("click", () => {
 
 // Navbar hide/show on scroll
 let lastScrollY = window.scrollY;
-const navbar = document.querySelector(".navbar");
+const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
   const currentScrollY = window.scrollY;
