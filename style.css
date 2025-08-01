@@ -1,60 +1,93 @@
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
 }
+
 .navbar {
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
 }
+
 .navbar .logo {
-    color: orange;
-    font-weight: bold;
+  color: #ff5c00;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-.navbar nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .hero {
-    text-align: center;
-    background-image: url('https://i.ibb.co/w2qbDHt/Chat-GPT-Image-Jul-31-2025-10-42-50-PM.png');
-    background-size: cover;
-    padding: 60px 20px 20px 20px;
+  position: relative;
+  text-align: center;
 }
-.search-bar {
-    margin-top: 20px;
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
 }
-.search-bar input,
-.search-bar select {
-    padding: 10px;
-    margin-right: 5px;
-    width: 120px;
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
-.search-bar button {
-    padding: 10px 20px;
-    background: orange;
-    border: none;
-    color: white;
+
+.hero-text h1 {
+  font-size: 2.5rem;
 }
-.tool-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 20px;
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
+
+.hero-text input {
+  padding: 0.7rem;
+  width: 300px;
+  max-width: 90%;
+  border: none;
+  border-radius: 5px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #000;
+}
+
 .tool {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffa500;
 }
+
 footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+  color: #aaa;
 }
