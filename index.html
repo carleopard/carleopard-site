@@ -86,27 +86,7 @@
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   });
 
-  // Shrink and auto-hide navbar on scroll
-  let lastScrollY = window.scrollY;
-  const navbar = document.getElementById("navbar");
-
-  window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
-
-    if (currentScrollY > 80) {
-      navbar.style.padding = "10px 20px";
-      if (currentScrollY > lastScrollY) {
-        navbar.style.top = "-80px"; // hide
-      } else {
-        navbar.style.top = "0"; // show
-      }
-    } else {
-      navbar.style.padding = "18px 20px";
-      navbar.style.top = "0";
-    }
-
-    lastScrollY = currentScrollY;
-  });
+ 
 </script>
 
 
