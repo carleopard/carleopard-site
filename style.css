@@ -438,5 +438,25 @@ ul {
   align-items: center;
   gap: 10px;
 }
+.section-leopard-bg {
+  background: url('https://i.ibb.co/DfzsDSSx/Chat-GPT-Image-Jul-31-2025-10-21-09-PM.png') center center / cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  color: #f4e1c1;
+  padding: 80px 20px;
+}
+
+.section-leopard-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75); /* dark overlay for contrast */
+  z-index: 0;
+}
+
+.section-leopard-bg .container {
+  position: relative;
+  z-index: 1;
+}
 
 
