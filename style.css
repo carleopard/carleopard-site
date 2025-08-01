@@ -272,5 +272,62 @@ ul {
 .tool-box:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
+/* Shared Section Styling */
+.section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+/* Overlay Box */
+.overlay-box {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  padding: 40px;
+  color: #fff;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* Section-specific Backgrounds */
+.section-5 {
+  background-image: url('https://i.ibb.co/XrBT3ZQw/Chat-GPT-Image-Jul-31-2025-07-24-39-PM.png');
+}
+
+.section-6 {
+  background-image: url('https://i.ibb.co/vn1hzgz/A-leopard-driving-a-car.png');
+}
+
+.section-7 {
+  background-image: url('https://i.ibb.co/vx1H9KPd/Chat-GPT-Image-Jul-31-2025-08-48-47-PM.png');
+}
+
+/* Optional: Smoother scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  line-height: 2;
+  font-size: 1.1em;
+}
 
 
