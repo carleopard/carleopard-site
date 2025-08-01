@@ -475,6 +475,28 @@ ul {
   margin-right: 10px;
   font-size: 1.3rem;
 }
+.centered-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.feature-list li {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.feature-list .icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
 
   z-index: 1;
 }
